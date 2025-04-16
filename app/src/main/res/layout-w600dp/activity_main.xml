@@ -7,8 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <!-- Шапка, которая будет сдвигать контент -->
+    
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,7 +21,6 @@
             app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light" />
     </com.google.android.material.appbar.AppBarLayout>
 
-    <!-- Основной контент, который будет сдвигаться вниз -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -34,7 +32,6 @@
         android:baselineAligned="false"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <!-- Слева: список контактов -->
         <fragment
             android:id="@+id/contactsFragment"
             android:name="com.example.myapplication.ContactsFragment"
@@ -44,7 +41,6 @@
             android:layout_marginEnd="16dp"
             tools:layout="@layout/fragment_contacts" />
 
-        <!-- Справа: детали контакта или форма добавления -->
         <FrameLayout
             android:id="@+id/rightPaneContainer"
             android:layout_width="0dp"
