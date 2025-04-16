@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <GridLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:useDefaultMargins="true">
+
+        <TextView android:id="@+id/nameLabelTextView" style="@style/ContactLabelTextView" android:text="@string/label_name" />
+        <TextView android:id="@+id/nameTextView" style="@style/ContactTextView" />
+
+        <TextView android:id="@+id/phoneLabelTextView" style="@style/ContactLabelTextView" android:text="@string/label_phone" />
+        <TextView android:id="@+id/phoneTextView" style="@style/ContactTextView" />
+
+        <TextView android:id="@+id/emailLabelTextView" style="@style/ContactLabelTextView" android:text="@string/label_email" />
+        <TextView android:id="@+id/emailTextView" style="@style/ContactTextView" />
+        <TextView android:id="@+id/streetLabelTextView" style="@style/ContactLabelTextView" android:text="@string/label_street" />
+        <TextView android:id="@+id/streetTextView" style="@style/ContactTextView" />
+
+        <TextView android:id="@+id/cityLabelTextView" style="@style/ContactLabelTextView" android:text="@string/label_city" />
+        <TextView android:id="@+id/cityTextView" style="@style/ContactTextView" />
+
+        <TextView android:id="@+id/stateLabelTextView" style="@style/ContactLabelTextView" android:text="@string/label_state" />
+        <TextView android:id="@+id/stateTextView" style="@style/ContactTextView" />
+
+        <TextView android:id="@+id/zipLabelTextView" style="@style/ContactLabelTextView" android:text="@string/label_zip" />
+        <TextView android:id="@+id/zipTextView" style="@style/ContactTextView" />
+
+    </GridLayout>
+</ScrollView>
